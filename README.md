@@ -16,8 +16,9 @@ Why look outside when you can just look at your phone!
       **You don't need to enter billing information or anything. The free plan will be more than enough.**
   4. I have setup the View Controller for you with just one large label. The goal is to say Yep if it's raining and Nope if it's not. 
   5. Call the [getForecastsForLatitude:Longitude:time:exclusions:success:failure](http://cocoadocs.org/docsets/Forecastr/0.1.2/Classes/Forecastr.html#//api/name/getForecastForLatitude:longitude:time:exclusions:success:failure:) method. It will return the current weather in the `@"currently"` key with a `precipProbability` key. If that key is `1` then it is raining! **Remember any optional argument or block you can usually just put in `nil` and it will work**
-  6. This method separates the success and failure case into two separate blocks. Update the label with the appropriate message when you get the weather.
-  7. If it's not raining right now, find some place it is raining. I'd checkout Portland...usually it's raining there.
+  6. As you can see, this method requires a lat/lng. Sure, you could enter this manually, but that's not as fun! This is a great opportunity to try out current location in iOS 8. Here's a great StackOverflow on finding a user's current location: http://stackoverflow.com/questions/26134641/how-to-get-current-location-lat-long-in-ios-8. **DO NOT SKIP OVER THE STUFF ABOUT InfoPlist.strings file! You need to implement this for it to work!**
+  7. This method separates the success and failure case into two separate blocks. Update the label with the appropriate message when you get the weather.
+  8. If it's not raining right now, find some place it is raining. I'd checkout Portland...usually it's raining there.
 
 ## Extra Credit
 
